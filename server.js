@@ -27,6 +27,7 @@ app.post('/', urlencodedParser,(req, res)=>{
 		let container = extension + 'Dir';
 		let vname = info.title.replace(/\W+/g, '')+'.'+extension;
 		let vpath = path.join(__dirname, container, vname);
+		res.status(200);
 		//querydb
 		//else
 		switch(extension)
